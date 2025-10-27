@@ -312,8 +312,8 @@ public class SendMailScore {
 	
 	public static void SendMail(String content,String sub)
 	{
-	    final String username = "alekhpradhan18@gmail.com";     
-	    final String password = "fzqp anhv bwht xzyc";          
+	    final String username = "UserName";     
+	    final String password = "PWD";          
 
 	    Properties props = new Properties();
 	  
@@ -330,8 +330,8 @@ public class SendMailScore {
 
 	    try {
 	        Message message = new MimeMessage(session);
-	        message.setFrom(new InternetAddress("alekhpradhan18@gmail.com"));
-	        String[] id = {"manupradhan7887@gmail.com"};
+	        message.setFrom(new InternetAddress("From Email"));
+	        String[] id = {"TO Mail"};
 	        InternetAddress[] recipientAddresses = new InternetAddress[id.length];
 
 	        for (int i = 0; i < id.length; i++) {
